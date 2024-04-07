@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sony Music Industry Landing Page</title>
+  <link rel="stylesheet" href="./landingpage.css">
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://e7.pngegg.com/pngimages/739/965/png-clipart-sony-music-logo-illustration-sony-music-logo-sony-entertainment-network-wordmark-others-miscellaneous-text-thumbnail.png" alt="Sony Music Industry Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>MUSIC IS ON....!!!</h2>
+    <h1>Welcome to Sony Music Industry</h1>
+    <p>Discover the world of music with Sony. Explore our latest releases, upcoming events, and talented artists.</p>
+    <a href="#" class="btn">Explore Now</a>
+  </section>
+  <h1 id="center">
+ 
+<CENTER>SONY ENTERTAINMENT AND PVT LTD.</CENTER>
+  </h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p>&copy; 2024 Sony Music Industry</p>
+  </footer>
+</body>
+</html>
